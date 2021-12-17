@@ -8,7 +8,6 @@ const dotenv_1 = __importDefault(require("dotenv"));
 dotenv_1.default.config();
 const rootDir = process.env.NODE_ENV === "development" ? "src" : "build";
 const extesionFile = process.env.NODE_ENV === "development" ? "ts" : "js";
-console.log(`${rootDir}/${process.env.TYPEORM_ENTITIES}${extesionFile}`);
 const config = {
     type: process.env.TYPEORM_CONNECTION,
     host: process.env.TYPEORM_HOST,

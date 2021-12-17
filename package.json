@@ -5,7 +5,7 @@
   "license": "MIT",
   "scripts": {
     "build": "tsc",
-    "start": "ts-node build/server",
+    "start": "node build/server",
     "dev": "tsnd --transpile-only src/server.ts",
     "typeorm": "tsnd node_modules/typeorm/cli.js"
   },
